@@ -1,0 +1,11 @@
+#templates {
+  display: none; }
+
+* {
+  box-sizing: border-box; }
+
+.bookTitles {
+  border-right: 2px solid #bab9b9; }
+
+.bookTitles .table .book img {
+  max-height: 100px; }

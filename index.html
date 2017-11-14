@@ -3,15 +3,110 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>NEW PROJECT TEMPLATE</title>
+    <title>LIBRARY PROJECT</title>
 
-    <link rel="stylesheet" href="css/min/main-min.css">
+    <!-- Latest Bootstrap compiled and minified CSS -->
+    <link rel="stylesheet"    href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="css/main.css">
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   </head>
   <body>
 
+    <div class="container">
 
+      <div class="page-header text-center">
+        <h2>Margarita's Library</h2>
+      </div>
+
+      <div class="row">
+
+        <div class="col-md-8 bookTitles">
+
+          <div class="panel panel-default">
+            <!-- Default panel contents -->
+            <div class="panel-heading">
+              <h3>
+                Book
+                <div class="btn btn-primary glyphicon glyphicon-plus pull-right"></div>
+              </h3>
+
+          </div>
+
+          <!-- Table -->
+          <table class="table table-striped">
+            <tr></tr>
+            <tr class="book" data-id="some-id">
+              <td><img class="img-responsive" src="https://images-na.ssl-images-amazon.com/images/I/51IQefEwcPL._SX369_BO1,204,203,200_.jpg" alt=""></td>
+              <td>Book Title</td>
+            </tr>
+            <tr>
+              <td>IMAGE</td>
+              <td>Book Title</td>
+            </tr>
+            <tr>
+              <td>IMAGE</td>
+              <td>Book Title</td>
+            </tr>
+
+          </table>
+        </div>
+      </div>
+
+
+
+        <div class="col-md-4 borrowerName">
+          <div class="panel panel-default">
+            <!-- Default panel contents -->
+            <div class="panel-heading">
+              <h3>
+                Borrower
+                <div class="btn btn-primary glyphicon glyphicon-plus pull-right"></div>
+              </h3>
+
+          </div>
+
+          <!-- Table -->
+          <table class="table table-striped">
+            <tr></tr>
+            <tr>
+              <td>Name</td>
+            </tr>
+            <tr>
+              <td>Name</td>
+            </tr>
+            <tr>
+              <td>Name</td>
+            </tr>
+
+          </table>
+        </div>
+        </div>
+
+      </div> <!--END OF ROW -->
+
+    </div> <!--END OF CONTAINER -->
+
+    <section id="templates">
+
+      <table>
+        <tr class="book" data-id="some-id">
+          <td><img class="img-responsive" src="https://images-na.ssl-images-amazon.com/images/I/51IQefEwcPL._SX369_BO1,204,203,200_.jpg" alt=""></td>
+          <td>Book Title</td>
+        </tr>
+      </table>
+
+    </section>
+
+
+
+
+
+    <!-- Latest Bootstrap compiled and minified JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+    <!-- Javascript  -->
     <script src="scripts/min/requests-min.js" charset="utf-8"></script>
     <script src="scripts/min/main-min.js" charset="utf-8"></script>
   </body>
