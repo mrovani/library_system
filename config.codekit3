@@ -36,6 +36,16 @@
 		"sC": 0,
 		"tS": 0
 		},
+	"\/scripts\/min\/main-min.js": {
+		"ft": 64,
+		"ma": 0,
+		"mi": 0,
+		"oA": 0,
+		"oAP": "\/scripts\/min\/min\/main-min-min.js",
+		"oF": 0,
+		"sC": 0,
+		"tS": 0
+		},
 	"\/scripts\/min\/requests-min.js": {
 		"ft": 64,
 		"ma": 0,
