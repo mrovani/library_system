@@ -1,18 +1,13 @@
 $theme-primary: lightgrey;
 
-#templates {
-  display: none;
-}
-
-
 * {
   box-sizing: border-box;
 
 }
 
-.bookTitles {
-  border-right: 2px solid darken($theme-primary, 10);
-}
+// .bookTitles {
+//   border-right: 2px solid darken($theme-primary, 10);
+// }
 
 .bookTitles {
   .table {
@@ -22,4 +17,8 @@ $theme-primary: lightgrey;
       }
     }
   }
+}
+
+.btn-sm {
+  margin: 0 auto;
 }

@@ -29,34 +29,23 @@
             <div class="panel-heading">
               <h3>
                 Book
-                <div class="btn btn-primary glyphicon glyphicon-plus pull-right"></div>
+                <button class="btn btn-primary glyphicon glyphicon-plus pull-right" data-toggle="modal" data-target="#addBookModal"></button>
               </h3>
 
-          </div>
+            </div>
 
-          <!-- Table -->
-          <table class="table table-striped">
+
+
+          <!-- Book Table -->
+          <table id="bookTable" class="table table-striped">
             <tr></tr>
-            <tr class="book" data-id="some-id">
-              <td><img class="img-responsive" src="https://images-na.ssl-images-amazon.com/images/I/51IQefEwcPL._SX369_BO1,204,203,200_.jpg" alt=""></td>
-              <td>Book Title</td>
-            </tr>
-            <tr>
-              <td>IMAGE</td>
-              <td>Book Title</td>
-            </tr>
-            <tr>
-              <td>IMAGE</td>
-              <td>Book Title</td>
-            </tr>
-
           </table>
         </div>
       </div>
 
 
 
-        <div class="col-md-4 borrowerName">
+        <div class="col-md-4 borrowers">
           <div class="panel panel-default">
             <!-- Default panel contents -->
             <div class="panel-heading">
@@ -67,35 +56,83 @@
 
           </div>
 
-          <!-- Table -->
-          <table class="table table-striped">
+          <!-- Borrower Table -->
+          <table id="borrowerTable" class="table table-striped">
             <tr></tr>
-            <tr>
-              <td>Name</td>
-            </tr>
-            <tr>
-              <td>Name</td>
-            </tr>
-            <tr>
-              <td>Name</td>
-            </tr>
-
           </table>
-        </div>
+          </div>
         </div>
 
       </div> <!--END OF ROW -->
 
     </div> <!--END OF CONTAINER -->
 
-    <section id="templates">
+    <!--===================================================================  -->
+    <!--=============================MODALS================================  -->
+    <!--===================================================================  -->
 
+    <!-- ADD BOOK MODAL -->
+
+    <div class="modal fade" id="addBookModal" tabindex="-1" role="dialog" aria-labelledby="addBookModalLabel">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+            <h4 class="modal-title" id="addBookModalLabel">Add a Book!</h4>
+          </div>
+          <div class="modal-body">
+            <form id="addBookForm">
+
+                <div class="form-group input-group">
+                <span class="input-group-addon"><div class="glyphicon glyphicon-book"></div></span>
+                <input class="form-control addBookTitle" type="text" name="bookTitle" placeholder="Title">
+              </div>
+
+              <div class="form-group">
+                <textarea class="form-control addBookDescription" rows="8" name="bookDescription" placeholder="Description"></textarea>
+              </div>
+
+              <div class="form-group input-group">
+                <span class="input-group-addon"><div class="glyphicon glyphicon-picture"></div></span>
+                <input class="form-control addBookImageURL" type="text" name="bookImageURL" placeholder="Image URL">
+              </div>
+
+            </form>
+
+
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+            <button id="createBookButton" type="button" class="btn btn-primary">Add Book</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+
+    <!--===================================================================  -->
+    <!--=============================TEMPLATES=============================  -->
+    <!--===================================================================  -->
+    <section id="templates" class="hidden">
+<!-- BOOK DATA TEMPLATE -->
       <table>
         <tr class="book" data-id="some-id">
-          <td><img class="img-responsive" src="https://images-na.ssl-images-amazon.com/images/I/51IQefEwcPL._SX369_BO1,204,203,200_.jpg" alt=""></td>
-          <td>Book Title</td>
+          <td><img class="img-responsive bookImage" src="" alt=""></td>
+          <td class="bookTitles">Book Title</td>
+          <td class="btn-sm btn-danger glyphicon glyphicon-remove pull right"></td>
         </tr>
       </table>
+
+<!--BORROWER DATA TEMPLATE  -->
+      <table>
+        <tr class="borrower" data-id="some-id">
+          <td class="firstName">First Name</td>
+          <td class="lastName">Last Name</td>
+          <td class="btn-sm btn-danger glyphicon glyphicon-remove pull right"></td>
+        </tr>
+      </table>
+
 
     </section>
 
