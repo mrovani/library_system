@@ -5,20 +5,25 @@ $theme-primary: lightgrey;
 
 }
 
-// .bookTitles {
-//   border-right: 2px solid darken($theme-primary, 10);
-// }
+.booksHeader, .borrowersHeader {
+  tr{
+    td{
+      font-size: 1.25em;
+    }
+  }
+}
 
 .bookTitles {
   .table {
     .book{
       img {
         max-height: 100px;
+        // margin: 0 auto;
       }
     }
   }
 }
 
 .btn-sm {
-  margin: 0 auto;
+  margin: 8px auto;
 }

@@ -1,8 +1,11 @@
 * {
   box-sizing: border-box; }
 
+.booksHeader tr td, .borrowersHeader tr td {
+  font-size: 1.25em; }
+
 .bookTitles .table .book img {
   max-height: 100px; }
 
 .btn-sm {
-  margin: 0 auto; }
+  margin: 8px auto; }
