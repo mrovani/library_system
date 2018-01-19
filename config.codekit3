@@ -26,6 +26,26 @@
 		"oF": 0,
 		"oS": 3
 		},
+	"\/css\/variables.css": {
+		"aP": 1,
+		"bl": 0,
+		"ft": 16,
+		"ma": 0,
+		"oA": 0,
+		"oAP": "\/css\/min\/variables-min.css",
+		"oF": 0,
+		"oS": 3
+		},
+	"\/images\/pexels-photo.jpg": {
+		"ft": 16384,
+		"iS": 11616384,
+		"oA": 0,
+		"oAP": "\/images\/pexels-photo.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
 	"\/index.html": {
 		"cB": 0,
 		"ft": 8192,
@@ -102,6 +122,19 @@
 		"ma": 0,
 		"oA": 0,
 		"oAP": "\/css\/main.css",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
+		},
+	"\/scss\/variables.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "\/css\/variables.css",
 		"oF": 0,
 		"oS": 0,
 		"uL": 1
